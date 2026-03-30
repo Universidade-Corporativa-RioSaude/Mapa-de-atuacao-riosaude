@@ -46,6 +46,10 @@ body { font-family:'DM Sans',sans-serif; background:#f0f6fb; min-height:100vh; d
 .stat:last-child { border-right:none; }
 .stat-val { font-family:'Sora',sans-serif; font-size:20px; font-weight:800; color:#007DB8; }
 .stat-lbl { font-size:9px; color:#8aafc4; text-transform:uppercase; letter-spacing:1px; margin-top:2px; line-height:1.3; }
+.gestao-plena { display: flex; flex-direction: column; align-items: center; }
+.gestao-title { font-weight: 700; margin-bottom: 8px; font-size: 12px; text-align: center; }
+.gestao-items { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; width: 100%; }
+.gestao-item { flex: 1 1 50%; text-align: center; }
 </style>
 </head>
 <body>
@@ -98,46 +102,32 @@ body { font-family:'DM Sans',sans-serif; background:#f0f6fb; min-height:100vh; d
     </div>
   </div>
   
-  <div class="stats-container">
-    <!-- Primeira coluna -->
-    <div class="stats-col">
-      <div class="stat">
-        <div class="stat-val">12</div>
-        <div class="stat-lbl">Hospitais Fortalecimento</div>
-      </div>
-      <div class="stat">
-        <div class="stat-val">35</div>
-        <div class="stat-lbl">Apoio Operacional</div>
-      </div>
+  <div class="stats-bar">
+    <div class="stat">
+      <div class="stat-val">12</div>
+      <div class="stat-lbl">Hospitais Fortalecimento</div>
+    </div>
+    <div class="stat">
+      <div class="stat-val">35</div>
+      <div class="stat-lbl">Apoio Operacional</div>
     </div>
   
-    <!-- Segunda coluna -->
-    <div class="stats-col">
-      <!-- Listra superior -->
-      <div style="border-top: 2px solid #007DB8; margin-bottom: 8px;"></div>
-      <!-- Título -->
-      <div style="text-align:center; font-weight:700; margin-bottom:8px; font-size:12px;">
-        Gestão Plena
-      </div>
-  
-      <!-- Blocos internos -->
-      <div class="stat-row">
-        <div class="stat">
+    <div class="stat gestao-plena">
+      <div class="gestao-title">Gestão Plena</div>
+      <div class="gestao-items">
+        <div class="gestao-item">
           <div class="stat-val">1</div>
           <div class="stat-lbl">CER</div>
         </div>
-        <div class="stat">
+        <div class="gestao-item">
           <div class="stat-val">12</div>
           <div class="stat-lbl">UPAs</div>
         </div>
-      </div>
-  
-      <div class="stat-row">
-        <div class="stat">
+        <div class="gestao-item">
           <div class="stat-val">1</div>
           <div class="stat-lbl">Maternidade</div>
         </div>
-        <div class="stat">
+        <div class="gestao-item">
           <div class="stat-val">1</div>
           <div class="stat-lbl">Hospital</div>
         </div>
