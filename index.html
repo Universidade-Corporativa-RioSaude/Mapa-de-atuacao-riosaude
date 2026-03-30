@@ -110,9 +110,8 @@ body { font-family:'DM Sans',sans-serif; background:#f0f6fb; min-height:100vh; d
 <script>
 var data = {
   '1': { name:'Área Programática 1.0', region:'📍 Centro, Paquetá, São Cristóvão, Gamboa, Caju, Santa Teresa', color:'#004F7C', units:[
-    {name:'Hospital Municipal Souza Aguiar (HMSA)',type:'Fortalecimento + Apoio Operacional',icon:'🏥'},
-    {name:'Hospital Municipal Barata Ribeiro',type:'Fortalecimento + Apoio Operacional',icon:'🏥'},
-    {name:'Maternidade Fernando Magalhães',type:'Fortalecimento + Apoio Operacional',icon:'🤱'},
+    {name:'Hospital Municipal Souza Aguiar (HMSA)',type:'Gestão Plena + Apoio Operacional',icon:'🏥'},
+    {name:'Hospital Municipal Barata Ribeiro',type:'Gestão Plena + Apoio Operacional',icon:'🏥'},
     {name:'Policlínica Antônio Ribeiro Netto',type:'Apoio Operacional',icon:'🏢'},
     {name:'Sede Administrativa CAP 1.0',type:'Administrativo',icon:'🏛️'},
     {name:'IVISA CCZ',type:'Vigilância Sanitária — Lapa',icon:'🔬'},
@@ -122,28 +121,25 @@ var data = {
     {name:'OTICS',type:'Catete',icon:'💻'}
   ]},
   '2': { name:'Área Programática 2.1 e 2.2', region:'📍 Botafogo, Copacabana, Lagoa, Tijuca, Vila Isabel, Rocinha', color:'#0085C3', units:[
-    {name:'Hospital Municipal Miguel Couto',type:'Fortalecimento + Apoio Operacional',icon:'🏥'},
-    {name:'Hospital Municipal Rocha Maia',type:'Fortalecimento + Apoio Operacional',icon:'🏥'},
-    {name:'Hospital do Andaraí',type:'Fortalecimento + Apoio Operacional',icon:'🏥'},
-    {name:'Maternidade da Rocinha',type:'Fortalecimento + Apoio Operacional',icon:'🤱'},
+    {name:'Hospital Municipal Miguel Couto',type:'Gestão Plena + Apoio Operacional',icon:'🏥'},
+    {name:'Hospital Municipal Rocha Maia',type:'Gestão Plena + Apoio Operacional',icon:'🏥'},
+    {name:'Hospital do Andaraí',type:'Gestão Plena + Apoio Operacional',icon:'🏥'},
+    {name:'Maternidade da Rocinha',type:'Gestão Plena + Apoio Operacional',icon:'🤱'},
     {name:'Clínica da Família Rinaldo de Lamare',type:'Apoio Operacional',icon:'🏥'},
-    {name:'Hospital Municipal Jesus',type:'Fortalecimento + Apoio Operacional',icon:'🏥'},
+    {name:'Hospital Municipal Jesus',type:'Gestão Plena + Apoio Operacional',icon:'🏥'},
     {name:'Sede Administrativa CAP 2.1',type:'Administrativo',icon:'🏛️'},
     {name:'Sede Administrativa CAP 2.2',type:'Administrativo',icon:'🏛️'}
   ]},
   '3': { name:'Área Programática 3.1, 3.2 e 3.3', region:'📍 Ramos, Penha, Inhaúma, Méier, Madureira, Pavuna, Ilha do Governador', color:'#00A8C6', units:[
-    {name:'Maternidade Carmela Dutra',type:'Fortalecimento + Apoio Operacional ',icon:'🤱'},
-    {name:'Hospital Municipal Piedade',type:'Fortalecimento + Apoio Operacional ',icon:'🏥'},
-    {name:'Hospital Municipal Francisco da Silva Telles',type:'Fortalecimento + Apoio Operacional',icon:'🏥'},
+    {name:'Hospital Municipal Piedade',type:'Gestão Plena + Apoio Operacional ',icon:'🏥'},
+    {name:'Hospital Municipal Francisco da Silva Telles',type:'Gestão Plena + Apoio Operacional',icon:'🏥'},
     {name:'Hospital Municipal Paulino Werneck',type:'Apoio Operacional',icon:'🏥'},
-    {name:'Hospital Municipal Salgado Filho',type:'Fortalecimento + Apoio Operacional',icon:'🏥'},
-    {name:'Hospital Municipal Ronaldo Gazolla',type:'Hospital + Apoio Operacional',icon:'🏥'},
-    {name:'Maternidade Alexander Fleming',type:'Fortalecimento + Apoio Operacional',icon:'🤱'},
-    {name:'Maternidade Herculano Pinheiro',type:'Fortalecimento + Apoio Operacional',icon:'🤱'},
-    {name:'UPA Del Castilho',type:'UPA + Apoio Operacional',icon:'🚑'},
-    {name:'UPA Madureira',type:'UPA + Apoio Operacional',icon:'🚑'},
-    {name:'UPA Costa Barros',type:'UPA + Apoio Operacional',icon:'🚑'},
-    {name:'UPA Rocha Miranda',type:'UPA + Apoio Operacional',icon:'🚑'},
+    {name:'Hospital Municipal Salgado Filho',type:'Gestão Plena + Apoio Operacional',icon:'🏥'},
+    {name:'Hospital Municipal Ronaldo Gazolla',type:'Gestão Plena',icon:'🏥'},
+    {name:'UPA Del Castilho',type:'Gestão Plena + Apoio Operacional',icon:'🚑'},
+    {name:'UPA Madureira',type:'Gestão Plena + Apoio Operacional',icon:'🚑'},
+    {name:'UPA Costa Barros',type:'Gestão Plena + Apoio Operacional',icon:'🚑'},
+    {name:'UPA Rocha Miranda',type:'Gestão Plena + Apoio Operacional',icon:'🚑'},
     {name:'Sede Administrativa CAP 3.2',type:'Administrativo',icon:'🏛️'},
     {name:'Sede Administrativa CAP 3.3',type:'Administrativo',icon:'🏛️'}
   ]},
@@ -156,12 +152,12 @@ var data = {
     {name:'Sede Administrativa CAP 4.0',type:'Administrativo',icon:'🏛️'}
   ]},
   '5': { name:'Área Programática 5.1, 5.2 e 5.3', region:'📍 Bangu, Realengo, Campo Grande, Santa Cruz, Guaratiba', color:'#2E9E7A', units:[
-    {name:'UPA Magalhães Bastos',type:'UPA — Apoio Operacional',icon:'🚑'},
-    {name:'UPA Senador Camará',type:'UPA + Apoio Operacional',icon:'🚑'},
-    {name:'UPA João XXIII',type:'UPA + Apoio Operacional',icon:'🚑'},
-    {name:'UPA Paciência',type:'UPA + Apoio Operacional',icon:'🚑'},
-    {name:'UPA Sepetiba',type:'UPA + Apoio Operacional',icon:'🚑'},
-    {name:'UPA Vila Kennedy',type:'UPA + Apoio Operacional',icon:'🚑'},
+    {name:'UPA Magalhães Bastos',type:'Gestão Plena — Apoio Operacional',icon:'🚑'},
+    {name:'UPA Senador Camará',type:'Gestão Plena + Apoio Operacional',icon:'🚑'},
+    {name:'UPA João XXIII',type:'Gestão Plena + Apoio Operacional',icon:'🚑'},
+    {name:'UPA Paciência',type:'Gestão Plena + Apoio Operacional',icon:'🚑'},
+    {name:'UPA Sepetiba',type:'Gestão Plena + Apoio Operacional',icon:'🚑'},
+    {name:'UPA Vila Kennedy',type:'Gestão Plena + Apoio Operacional',icon:'🚑'},
     {name:'Casa de Parto David Capistrano Filho',type:'Apoio Operacional',icon:'🤱'}
   ]}
 };
