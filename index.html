@@ -41,11 +41,12 @@ body { font-family:'DM Sans',sans-serif; background:#f0f6fb; min-height:100vh; d
 .unit-icon { font-size:15px; flex-shrink:0; margin-top:1px; }
 .unit-name { font-size:12px; font-weight:600; color:#1a3a4f; line-height:1.35; }
 .unit-type { font-size:10px; color:#8aafc4; margin-top:2px; }
-.stats-bar { display:flex; border-top:1px solid #e8f0f7; }
+.stats-bar { display:flex; border-top:1px solid #e8f0f7; border-radius: 16px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,79,124,0.07); }
 .stat { flex:1; text-align:center; padding:16px 8px; border-right:1px solid #e8f0f7; display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .stat:last-child { border-right:none; }
 .stat-val { font-family:'Sora',sans-serif; font-size:20px; font-weight:800; color:#007DB8; }
 .stat-lbl { font-size:9px; color:#8aafc4; text-transform:uppercase; letter-spacing:1px; margin-top:2px; line-height:1.3; }
+.stats-bar-wrapper { padding: 20px 24px 24px; }
 .gestao-plena-block { display: flex; flex-direction: column; border-right: 1px solid #e8f0f7; flex: 2; }
 .gestao-plena-title { text-align: center; font-size: 9px; font-weight: 800; color: #007DB8; text-transform: uppercase; letter-spacing: 1px; padding: 6px 8px 4px; border-bottom: 1px solid #e8f0f7; }
 .gestao-plena-grid { display: grid; grid-template-columns: 1fr 1fr; flex: 1; }
@@ -105,35 +106,37 @@ body { font-family:'DM Sans',sans-serif; background:#f0f6fb; min-height:100vh; d
       </div>
     </div>
   </div>
-  
-  <div class="stats-bar">
-    <div class="stat">
-      <div class="stat-val">12</div>
-      <div class="stat-lbl">Hospitais Fortalecimento</div>
-    </div>
-    <div class="stat">
-      <div class="stat-val">35</div>
-      <div class="stat-lbl">Apoio Operacional</div>
-    </div>
-  
-    <div class="gestao-plena-block">
-      <div class="gestao-plena-title">Gestão Plena</div>
-      <div class="gestao-plena-grid">
-        <div class="stat">
-          <div class="stat-val">1</div>
-          <div class="stat-lbl">CER</div>
-        </div>
-        <div class="stat">
-          <div class="stat-val">12</div>
-          <div class="stat-lbl">UPAs</div>
-        </div>
-        <div class="stat">
-          <div class="stat-val">1</div>
-          <div class="stat-lbl">Maternidade</div>
-        </div>
-        <div class="stat">
-          <div class="stat-val">1</div>
-          <div class="stat-lbl">Hospital</div>
+
+  <div class="stats-bar-wrapper">
+    <div class="stats-bar">
+      <div class="stat">
+        <div class="stat-val">12</div>
+        <div class="stat-lbl">Hospitais Fortalecimento</div>
+      </div>
+      <div class="stat">
+        <div class="stat-val">35</div>
+        <div class="stat-lbl">Apoio Operacional</div>
+      </div>
+    
+      <div class="gestao-plena-block">
+        <div class="gestao-plena-title">Gestão Plena</div>
+        <div class="gestao-plena-grid">
+          <div class="stat">
+            <div class="stat-val">1</div>
+            <div class="stat-lbl">CER</div>
+          </div>
+          <div class="stat">
+            <div class="stat-val">12</div>
+            <div class="stat-lbl">UPAs</div>
+          </div>
+          <div class="stat">
+            <div class="stat-val">1</div>
+            <div class="stat-lbl">Maternidade</div>
+          </div>
+          <div class="stat">
+            <div class="stat-val">1</div>
+            <div class="stat-lbl">Hospital</div>
+          </div>
         </div>
       </div>
     </div>
